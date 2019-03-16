@@ -1,4 +1,6 @@
 # ImdbAPI-Reactjs
 A super simple Reactjs app that uses IMDP api to get data
 
-## It is my first time using Github and doing a project so please keep calm and don't laugh at me!
+## More functionalities will be added soon
+I will try to add all the api's fuctions
+Later on Hooks will replace the class beasd components

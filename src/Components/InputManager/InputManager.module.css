@@ -7,7 +7,7 @@
 }
 .searchButton{
     width: 20%;
-    background-color: #555555; /* black */
+    background-color: #F5C518; /* Yellow */
     border: none;
     color: white;
     text-align: center;
@@ -18,11 +18,10 @@
     height: 80%;
 }
 .searchButton:hover{
-    background-color: #e7e7e7;
-    color:black;
+    background-color: rgb(241, 209, 90);
+    color:rgb(134, 109, 16);
 }
 .searchInput{
-    float: left;
     width: 75%;
     display: inline-block;
     border: 1px solid #ccc;
