@@ -1,31 +1,31 @@
-*{
-    font-size: 16px;
+* {
+  font-size: 16px;
 }
-.searchDiv{
-    margin-top:10px;
-    height: 50px;
+.searchDiv {
+  margin-top: 10px;
+  height: 50px;
 }
-.searchButton{
-    width: 20%;
-    background-color: #F5C518; /* Yellow */
-    border: none;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    margin: 4px 2px;
-    cursor: pointer;
-    height: 80%;
+.searchButton {
+  width: 20%;
+  background-color: #f5c518; /* Yellow */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  height: 80%;
 }
-.searchButton:hover{
-    background-color: rgb(241, 209, 90);
-    color:rgb(134, 109, 16);
+.searchButton:hover {
+  background-color: rgb(241, 209, 90);
+  color: rgb(134, 109, 16);
 }
-.searchInput{
-    width: 75%;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-    margin: 4px 2px;
-    height:80%;
+.searchInput {
+  width: 75%;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin: 4px 2px;
+  height: 80%;
 }

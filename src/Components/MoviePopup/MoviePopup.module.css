@@ -1,0 +1,33 @@
+.main{
+  width:100%;
+}
+.info {
+  display: flex;
+  flex-direction: row;
+}
+.image {
+  height: 50vh;
+  width: 50%;
+}
+.image > img {
+  height: 50vh;
+  width: 100%;
+}
+.content {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  height: 50vh;
+}
+.contentTitle {
+  height: 20%;
+  font-size: 200%;
+}
+.contentDescription {
+  height: 40%;
+  margin-top:50px;
+}
+.contentDetail {
+  margin-top: 100px;
+  font-size: 400%;
+}

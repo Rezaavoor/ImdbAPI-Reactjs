@@ -1,34 +1,31 @@
-import React from 'react';
-import Popup from 'reactjs-popup';
-import MoviePopup from '../MoviePopup/MoviePopup';
-import InfoCard from '../InfoCard/InfoCard'
-import styleClasses from './InfoCards.module.css'
+import React from "react";
+import Popup from "reactjs-popup";
+import MoviePopup from "../MoviePopup/MoviePopup";
+import InfoCard from "../InfoCard/InfoCard";
+import styleClasses from "./InfoCards.module.css";
 
-
-const InfoCards = (props) => {
-
+const InfoCards = props => {
   let infoCards = null;
   infoCards = (
     <div className={styleClasses.main}>
-      {props.movies.d.map((movie) => {
+      {props.movies.d.map(movie => {
         return (
           <Popup
             trigger={
               <div>
-                <InfoCard movie={movie}></InfoCard>
-              </div>}
-              modal
-              closeOnDocumentClick>
-            <MoviePopup movie={movie}></MoviePopup>
+                <InfoCard movie={movie} />
+              </div>
+            }
+            modal
+            closeOnDocumentClick
+            key={movie.id}
+          >
+            <MoviePopup movie={movie} />
           </Popup>
         );
       })}
     </div>
   );
-  return (
-    <div>
-      {infoCards}
-    </div>
-  );
-}
+  return <div>{infoCards}</div>;
+};
 export default InfoCards;
