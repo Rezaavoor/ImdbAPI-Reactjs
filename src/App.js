@@ -18,10 +18,7 @@ const App =()=> {
       await fetch(imdburl,{})
         .then(response => response.text())
         .then(contents => (movies = contents));
-      movies = movies.replace(
-        "imdb$" + name.replace(" ", "_") + "(",
-        ""
-      );
+      movies = movies.replace("imdb$" + name.replace(" ", "_") + "(","");
       movies = movies.substring(0, movies.length - 1); //outputting a clean Object out of the response
       try {
         setMovies(JSON.parse(movies));
