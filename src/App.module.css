@@ -1,15 +1,15 @@
 .App {
-  background-color:white;
+  background-color: white;
   text-align: center;
   width: 1000px;
   height: auto;
   margin: auto;
 }
-.loading{
-  width:100px;
-  height:100px;
-  display:flex;
-  flex-direction:row;
+.loading {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
 }
