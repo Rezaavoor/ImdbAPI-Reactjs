@@ -1,7 +1,7 @@
 {
   "name": "imdbapi-reactjs",
   "version": "0.1.0",
-  "homepage": "http://rezaavoor.github.io/imdbapi-reactjs",
+  "homepage": "https://rezaavoor.github.io/imdbapi-reactjs",
   "private": true,
   "dependencies": {
     "axios": "^0.18.0",
