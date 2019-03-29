@@ -30,7 +30,7 @@
     "not ie <= 11",
     "not op_mini all"
   ],
-  "description": "A super simple Reactjs app that uses IMDP api to get data",
+  "description": "A super simple Reactjs app that uses Imdb api to get data",
   "main": "index.js",
   "repository": {
     "type": "git",
