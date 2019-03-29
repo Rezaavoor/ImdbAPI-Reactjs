@@ -8,7 +8,7 @@ const InfoCards = props => {
   let infoCards = null;
   infoCards = (
     <div className={styleClasses.main}>
-      {props.movies.d.map(movie => {
+      {props.movies.d?props.movies.d.map(movie => {
         return (
           <Popup
             trigger={
@@ -23,7 +23,9 @@ const InfoCards = props => {
             <MoviePopup movie={movie} />
           </Popup>
         );
-      })}
+      }
+      ):null
+      }
     </div>
   );
   return <div>{infoCards}</div>;

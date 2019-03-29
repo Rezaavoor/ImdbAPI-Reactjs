@@ -19,7 +19,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "npm run build&&gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -29,5 +29,16 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "description": "A super simple Reactjs app that uses IMDP api to get data",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rezaavoor/ImdbAPI-Reactjs.git"
+  },
+  "author": "Reza Hosseini",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rezaavoor/ImdbAPI-Reactjs/issues"
+  }
 }

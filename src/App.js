@@ -3,10 +3,9 @@ import styleClasses from "./App.module.css";
 
 import InputManager from "./Components/InputManager/InputManager";
 import InfoCards from "./Components/InfoCards/InfoCards";
-const App =()=> {
-
-  const [name,setName]=useState("Captain Marvel")
-  const [movies, setMovies]=useState(undefined)
+const App = () => {
+  const [name, setName] = useState("Captain Marvel");
+  const [movies, setMovies] = useState(undefined);
 
   const getData = async () => {
     if (name) {
@@ -15,10 +14,10 @@ const App =()=> {
       const imdburl = `https://v2.sg.media-imdb.com/suggests/${name
         .toLowerCase()
         .charAt(0)}/${name}.json`; //ex: https://v2.sg.media-imdb.com/suggests/b/batman.json
-      await fetch(imdburl,{})
+      await fetch(imdburl, {})
         .then(response => response.text())
         .then(contents => (movies = contents));
-      movies = movies.replace("imdb$" + name.replace(" ", "_") + "(","");
+      movies = movies.replace("imdb$" + name.replace(" ", "_") + "(", "");
       movies = movies.substring(0, movies.length - 1); //outputting a clean Object out of the response
       try {
         setMovies(JSON.parse(movies));
@@ -31,10 +30,15 @@ const App =()=> {
     }
   };
   useEffect(() => {
-    getData();
-    console.clear();
-    if(movies)console.log("id: " + movies.d[0].id);
-  },[name]);
+    try {
+      getData().then(
+        console.clear(),
+        movies ? console.log("id: " + movies.d[0].id) : null
+      );
+    } catch (error) {
+      console.log(error);
+    }
+  }, [name]);
 
   const inputChangeHandler = event => {
     const value = event.target.value;
@@ -45,27 +49,26 @@ const App =()=> {
     getData();
   };
 
-    let content;
-    content = (
-      <div className={styleClasses.App}>
-        <InputManager
-          clicked={() => searchClickHandler()}
-          inputChanged={event => inputChangeHandler(event)}
-          name={name}
+  let content;
+  content = (
+    <div className={styleClasses.App}>
+      <InputManager
+        clicked={() => searchClickHandler()}
+        inputChanged={event => inputChangeHandler(event)}
+        name={name}
+      />
+      {movies ? (
+        <InfoCards
+          movies={movies}
+          //clicked={this.movieClickHandler}
         />
-        {movies ? (
-          <InfoCards
-            movies={movies}
-            //clicked={this.movieClickHandler}
-          />
-        ) : (
-          <p>Loading</p>
-        )}
-      </div>
-    );
+      ) : (
+        <p>Loading</p>
+      )}
+    </div>
+  );
 
-    return content;
-  
-}
+  return content;
+};
 
 export default App;
