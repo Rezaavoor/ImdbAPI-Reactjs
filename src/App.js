@@ -10,11 +10,12 @@ const App = () => {
   const getData = async () => {
     if (name) {
       let movies = "";
-      // IMPORTANT!! If you are using localhost then you should somehow bypass the Allow-Control-Allow-Origin otherwise the fetch won't return anything
+      
+      const CORS = "https://cors-anywhere.herokuapp.com/" // IMPORTANT!! If you are using localhost then you should somehow bypass the Allow-Control-Allow-Origin otherwise the fetch won't return anything
       const imdburl = `https://v2.sg.media-imdb.com/suggests/${name
         .toLowerCase()
         .charAt(0)}/${name}.json`; //ex: https://v2.sg.media-imdb.com/suggests/b/batman.json
-      await fetch(imdburl, {})
+      await fetch(CORS+imdburl, {})
         .then(response => response.text())
         .then(contents => (movies = contents));
       movies = movies.replace("imdb$" + name.replace(" ", "_") + "(", "");
