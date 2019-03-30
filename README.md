@@ -2,7 +2,8 @@
 
 A super simple Reactjs app that uses IMDP api to get data.
 
-Check the demo of the app here: https://rezaavoor.github.io/ImdbAPI-Reactjs/.
+Check the demo of the app here : https://rezaavoor.github.io/ImdbAPI-Reactjs/ 
+or alternatively on Sandbox: https://2zkw49lxmr.codesandbox.io/  in case CORS problem occurs.
 
 
 ## Instructions
