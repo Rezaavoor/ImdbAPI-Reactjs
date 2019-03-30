@@ -1,15 +1,13 @@
 {
   "main.css": "/ImdbAPI-Reactjs/static/css/main.c3a4aede.chunk.css",
-  "main.js": "/ImdbAPI-Reactjs/static/js/main.dd16df39.chunk.js",
-  "main.js.map": "/ImdbAPI-Reactjs/static/js/main.dd16df39.chunk.js.map",
+  "main.js": "/ImdbAPI-Reactjs/static/js/main.3f7281ec.chunk.js",
+  "main.js.map": "/ImdbAPI-Reactjs/static/js/main.3f7281ec.chunk.js.map",
   "runtime~main.js": "/ImdbAPI-Reactjs/static/js/runtime~main.b053e06b.js",
   "runtime~main.js.map": "/ImdbAPI-Reactjs/static/js/runtime~main.b053e06b.js.map",
-  "static/css/2.a74e7050.chunk.css": "/ImdbAPI-Reactjs/static/css/2.a74e7050.chunk.css",
-  "static/js/2.af6bc467.chunk.js": "/ImdbAPI-Reactjs/static/js/2.af6bc467.chunk.js",
-  "static/js/2.af6bc467.chunk.js.map": "/ImdbAPI-Reactjs/static/js/2.af6bc467.chunk.js.map",
+  "static/js/2.8489d090.chunk.js": "/ImdbAPI-Reactjs/static/js/2.8489d090.chunk.js",
+  "static/js/2.8489d090.chunk.js.map": "/ImdbAPI-Reactjs/static/js/2.8489d090.chunk.js.map",
   "index.html": "/ImdbAPI-Reactjs/index.html",
-  "precache-manifest.411cc3a66a9058ddc30e1f457777c8be.js": "/ImdbAPI-Reactjs/precache-manifest.411cc3a66a9058ddc30e1f457777c8be.js",
+  "precache-manifest.d448b772b63095150240eb7863f38f46.js": "/ImdbAPI-Reactjs/precache-manifest.d448b772b63095150240eb7863f38f46.js",
   "service-worker.js": "/ImdbAPI-Reactjs/service-worker.js",
-  "static/css/2.a74e7050.chunk.css.map": "/ImdbAPI-Reactjs/static/css/2.a74e7050.chunk.css.map",
   "static/css/main.c3a4aede.chunk.css.map": "/ImdbAPI-Reactjs/static/css/main.c3a4aede.chunk.css.map"
 }
