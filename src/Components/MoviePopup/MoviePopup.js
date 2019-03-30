@@ -1,9 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { Player } from "video-react";
-import posed from "react-pose";
 
 import styleClasses from "./MoviePopup.module.css";
-import "../../../node_modules/video-react/dist/video-react.css";
 
 import scraper from "./scraper";
 
