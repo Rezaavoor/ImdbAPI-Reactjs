@@ -1,15 +1,15 @@
 {
-  "main.css": "/imdbapi-reactjs/static/css/main.065d7eba.chunk.css",
-  "main.js": "/imdbapi-reactjs/static/js/main.11a13065.chunk.js",
-  "main.js.map": "/imdbapi-reactjs/static/js/main.11a13065.chunk.js.map",
-  "runtime~main.js": "/imdbapi-reactjs/static/js/runtime~main.6202bd84.js",
-  "runtime~main.js.map": "/imdbapi-reactjs/static/js/runtime~main.6202bd84.js.map",
-  "static/css/2.0c79ce88.chunk.css": "/imdbapi-reactjs/static/css/2.0c79ce88.chunk.css",
-  "static/js/2.b22ab594.chunk.js": "/imdbapi-reactjs/static/js/2.b22ab594.chunk.js",
-  "static/js/2.b22ab594.chunk.js.map": "/imdbapi-reactjs/static/js/2.b22ab594.chunk.js.map",
-  "index.html": "/imdbapi-reactjs/index.html",
-  "precache-manifest.4d76148144f7bafd33132973dee11bd6.js": "/imdbapi-reactjs/precache-manifest.4d76148144f7bafd33132973dee11bd6.js",
-  "service-worker.js": "/imdbapi-reactjs/service-worker.js",
-  "static/css/2.0c79ce88.chunk.css.map": "/imdbapi-reactjs/static/css/2.0c79ce88.chunk.css.map",
-  "static/css/main.065d7eba.chunk.css.map": "/imdbapi-reactjs/static/css/main.065d7eba.chunk.css.map"
+  "main.css": "/imdbapi-reactjs/build/static/css/main.c3a4aede.chunk.css",
+  "main.js": "/imdbapi-reactjs/build/static/js/main.7f6b1741.chunk.js",
+  "main.js.map": "/imdbapi-reactjs/build/static/js/main.7f6b1741.chunk.js.map",
+  "runtime~main.js": "/imdbapi-reactjs/build/static/js/runtime~main.8977c6de.js",
+  "runtime~main.js.map": "/imdbapi-reactjs/build/static/js/runtime~main.8977c6de.js.map",
+  "static/css/2.a74e7050.chunk.css": "/imdbapi-reactjs/build/static/css/2.a74e7050.chunk.css",
+  "static/js/2.0760fe00.chunk.js": "/imdbapi-reactjs/build/static/js/2.0760fe00.chunk.js",
+  "static/js/2.0760fe00.chunk.js.map": "/imdbapi-reactjs/build/static/js/2.0760fe00.chunk.js.map",
+  "index.html": "/imdbapi-reactjs/build/index.html",
+  "precache-manifest.1bc2079a6321e0e100bb8ce6120f0ac9.js": "/imdbapi-reactjs/build/precache-manifest.1bc2079a6321e0e100bb8ce6120f0ac9.js",
+  "service-worker.js": "/imdbapi-reactjs/build/service-worker.js",
+  "static/css/2.a74e7050.chunk.css.map": "/imdbapi-reactjs/build/static/css/2.a74e7050.chunk.css.map",
+  "static/css/main.c3a4aede.chunk.css.map": "/imdbapi-reactjs/build/static/css/main.c3a4aede.chunk.css.map"
 }

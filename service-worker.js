@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/imdbapi-reactjs/precache-manifest.4d76148144f7bafd33132973dee11bd6.js"
+  "/imdbapi-reactjs/build/precache-manifest.1bc2079a6321e0e100bb8ce6120f0ac9.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/imdbapi-reactjs/index.html", {
+workbox.routing.registerNavigationRoute("/imdbapi-reactjs/build/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
