@@ -15,7 +15,7 @@ const App = () => {
       const imdburl = `https://v2.sg.media-imdb.com/suggests/${name
         .toLowerCase()
         .charAt(0)}/${CORS+name}.json`; //ex: https://v2.sg.media-imdb.com/suggests/b/batman.json
-      await fetch(imdburl, {})
+      await fetch(CORS+imdburl, {})
         .then(response => response.text())
         .then(contents => (movies = contents));
       movies = movies.replace("imdb$" + name.replace(" ", "_") + "(", "");
