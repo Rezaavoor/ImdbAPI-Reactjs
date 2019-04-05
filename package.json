@@ -8,6 +8,7 @@
     "cheerio": "^1.0.0-rc.2",
     "gh-pages": "^2.0.1",
     "react": "^16.8.4",
+    "react-css-loaders": "0.0.5",
     "react-dom": "^16.8.4",
     "react-pose": "^4.0.8",
     "react-scripts": "2.1.8",

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 import styleClasses from "./MoviePopup.module.css";
+import {BarLoader} from 'react-css-loaders';
 
 import scraper from "./scraper";
 
@@ -26,7 +27,7 @@ const MoviePopup = props => {
   }, []);
 
   let contents = null;
-  if (loading) contents = <p>Loading</p>;
+  if (loading) contents = <BarLoader/>;
   else
     contents = (
       <div className={styleClasses.main}>

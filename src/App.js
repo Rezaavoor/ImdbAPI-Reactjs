@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styleClasses from "./App.module.css";
+import {BarLoader} from 'react-css-loaders';
 
 import InputManager from "./Components/InputManager/InputManager";
 import InfoCards from "./Components/InfoCards/InfoCards";
@@ -15,7 +16,7 @@ const App = () => {
       const imdburl = `https://v2.sg.media-imdb.com/suggests/${name
         .toLowerCase()
         .charAt(0)}/${name}.json`; //ex: https://v2.sg.media-imdb.com/suggests/b/batman.json
-      await fetch(CORS+imdburl, {headers:{"Accept":"*/*"}})
+      await fetch(CORS+imdburl, {headers:{"Accept":"*/*","Access-Control-Allow-Origin":"*/*"}})
         .then(response => response.text())
         .then(contents => (movies = contents));
       movies = movies.replace("imdb$" + name.replace(" ", "_") + "(", "");
@@ -64,7 +65,7 @@ const App = () => {
           //clicked={this.movieClickHandler}
         />
       ) : (
-        <p>Loading</p>
+        <BarLoader width="100%"/>
       )}
     </div>
   );
