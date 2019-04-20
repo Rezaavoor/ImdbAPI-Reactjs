@@ -1,20 +1,20 @@
-import React from "react";
-import Popup from "reactjs-popup";
-import MoviePopup from "../MoviePopup/MoviePopup";
-import InfoCard from "../InfoCard/InfoCard";
-import styleClasses from "./InfoCards.module.css";
+import React from 'react';
+import Popup from 'reactjs-popup';
+import MoviePopup from '../MoviePopup/MoviePopup';
+import InfoCard from '../InfoCard/InfoCard';
+import styleClasses from './InfoCards.module.css';
 
 const InfoCards = props => {
   let infoCards = null;
   infoCards = (
     <div className={styleClasses.main}>
-      {props.movies.d?props.movies.d.map(movie => {
-        return (
+      {props.movies.d
+        ? props.movies.d.map(movie => {(
           <Popup
             trigger={
               <div>
                 <InfoCard movie={movie} />
-              </div>
+            </div>
             }
             modal
             closeOnDocumentClick
@@ -22,10 +22,8 @@ const InfoCards = props => {
           >
             <MoviePopup movie={movie} />
           </Popup>
-        );
-      }
-      ):null
-      }
+        )
+        : null}
     </div>
   );
   return <div>{infoCards}</div>;
