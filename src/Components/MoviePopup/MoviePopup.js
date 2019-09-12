@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 import styleClasses from "./MoviePopup.module.css";
-import {BarLoader} from 'react-css-loaders';
+import { BarLoader } from "react-css-loaders";
 
 import scraper from "./scraper";
 
@@ -27,22 +27,19 @@ const MoviePopup = props => {
   }, []);
 
   let contents = null;
-  if (loading) contents = <BarLoader/>;
+  if (loading) contents = <BarLoader />;
   else
     contents = (
       <div className={styleClasses.main}>
         <div className={styleClasses.info}>
           <div className={styleClasses.content}>
-            <div className={styleClasses.contentTitle}>{movieData.name}</div>
+            <div className={styleClasses.contentTitle}>{movieData.Title}</div>
             <div className={styleClasses.contentDescription}>
-              {movieData.description}
+              {movieData.Plot}
             </div>
             <div className={styleClasses.contentDetail}>
               <p>
-                <span>{`${movieData.datePublished.substring(
-                  0,
-                  4
-                )} | ${movieData.genre.slice(0, 2)} | `}</span>
+                <span>{`${movieData.Year} | ${movieData.Genre} | `}</span>
                 <span>
                   <img
                     style={{ width: "20px", height: "20px" }}
@@ -50,12 +47,12 @@ const MoviePopup = props => {
                     alt="poster"
                   />
                 </span>
-                <span>{`${movieData.aggregateRating.ratingValue}`}</span>
+                <span>{`${movieData.imdbRating}`}</span>
               </p>
             </div>
           </div>
           <div className={styleClasses.image}>
-            <img src={movieData.image} alt="Poster" />
+            <img src={movieData.Poster} alt="Poster" />
           </div>
         </div>
         <div className={styleClasses.moreInfo}>

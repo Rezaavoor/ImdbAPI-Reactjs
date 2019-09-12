@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styleClasses from "./App.module.css";
-import {BarLoader} from 'react-css-loaders';
+import { BarLoader } from "react-css-loaders";
 
 import InputManager from "./Components/InputManager/InputManager";
 import InfoCards from "./Components/InfoCards/InfoCards";
@@ -11,12 +11,14 @@ const App = () => {
   const getData = async () => {
     if (name) {
       let movies = "";
-      
-      const CORS = "https://cors-anywhere.herokuapp.com/" // IMPORTANT!! If you are using localhost then you should somehow bypass the Allow-Control-Allow-Origin otherwise the fetch won't return anything
+
+      const CORS = "https://cors-anywhere.herokuapp.com/"; // IMPORTANT!! If you are using localhost then you should somehow bypass the Allow-Control-Allow-Origin otherwise the fetch won't return anything
       const imdburl = `https://v2.sg.media-imdb.com/suggests/${name
         .toLowerCase()
         .charAt(0)}/${name}.json`; //ex: https://v2.sg.media-imdb.com/suggests/b/batman.json
-      await fetch(CORS+imdburl, {headers:{"Accept":"*/*","Access-Control-Allow-Origin":"*/*"}})
+      await fetch(CORS + imdburl, {
+        headers: { Accept: "*/*", "Access-Control-Allow-Origin": "*/*" }
+      })
         .then(response => response.text())
         .then(contents => (movies = contents));
       movies = movies.replace("imdb$" + name.replace(" ", "_") + "(", "");
@@ -33,10 +35,7 @@ const App = () => {
   };
   useEffect(() => {
     try {
-      getData().then(
-        console.clear(),
-        movies ? console.log("id: " + movies.d[0].id) : null
-      );
+      getData();
     } catch (error) {
       console.log(error);
     }
@@ -65,7 +64,7 @@ const App = () => {
           //clicked={this.movieClickHandler}
         />
       ) : (
-        <BarLoader width="100%"/>
+        <BarLoader width="100%" />
       )}
     </div>
   );
