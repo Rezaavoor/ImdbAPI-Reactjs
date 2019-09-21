@@ -16,7 +16,7 @@ const InfoCards = props => {
       closeOnDocumentClick
       key={movie.id}
     >
-      <MoviePopup movie={movie} />
+      <MoviePopup movie={movie} width='100px' />
     </Popup>
   ));
   const infoCards = (

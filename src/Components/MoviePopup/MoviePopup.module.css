@@ -1,33 +1,53 @@
-.main{
-  width:100%;
+.main {
+  width: 100%;
+  height: auto;
+  max-height: 90vh;
 }
 .info {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
 }
 .image {
-  height: 50vh;
-  width: 50%;
+  height: 30%;
+  width: auto;
+  margin: 0 auto;
 }
 .image > img {
-  height: 50vh;
-  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .content {
-  width: 80%;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  height: 50vh;
+  height: 50%;
 }
 .contentTitle {
   height: 20%;
-  font-size: 200%;
+  font-size: 2rem;
+  background-color: pink;
 }
 .contentDescription {
   height: 40%;
-  margin-top:50px;
 }
 .contentDetail {
-  margin-top: 100px;
-  font-size: 400%;
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 500px) {
+  .image > img {
+    width: 100%;
+  }
+  .contentTitle {
+    font-size: 1.2rem;
+  }
+  .contentDescription {
+    font-size: 0.7rem;
+  }
+  .contentDetail {
+    font-size: 2rem;
+  }
 }

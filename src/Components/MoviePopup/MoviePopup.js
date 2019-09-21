@@ -32,6 +32,9 @@ const MoviePopup = props => {
     contents = (
       <div className={styleClasses.main}>
         <div className={styleClasses.info}>
+          <div className={styleClasses.image}>
+            <img src={movieData.Poster} alt='Poster' />
+          </div>
           <div className={styleClasses.content}>
             <div className={styleClasses.contentTitle}>{movieData.Title}</div>
             <div className={styleClasses.contentDescription}>
@@ -44,22 +47,23 @@ const MoviePopup = props => {
                   <img
                     style={{ width: "20px", height: "20px" }}
                     src={starImage}
-                    alt="poster"
+                    alt='poster'
                   />
                 </span>
                 <span>{`${movieData.imdbRating}`}</span>
               </p>
             </div>
           </div>
-          <div className={styleClasses.image}>
-            <img src={movieData.Poster} alt="Poster" />
-          </div>
         </div>
         <div className={styleClasses.moreInfo}>
           <img
             src={arrowImage}
-            style={{ marginRight: "50px", height: "30px", width: "30px" }}
-            alt="poster"
+            style={{
+              margin: "-20px auto 0px auto",
+              height: "30px",
+              width: "30px"
+            }}
+            alt='poster'
           />
         </div>
       </div>
